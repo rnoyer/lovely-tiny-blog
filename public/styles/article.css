@@ -1,0 +1,30 @@
+.article {
+  flex: 1;
+  background-color: white;
+  margin: 2em auto;
+  padding: 2em;
+  width: clamp(15em, 66%, 40em);
+  border-radius: 1em;
+  border: 1px solid var(--pink-light);
+  box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.3);
+  overflow: auto;
+}
+
+.article_top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.article_content>p {
+  margin: 1em 0.5em;
+}
+
+.article_content>p:first-child {
+  margin-top: unset;
+}
+
+.article_datestamp {
+  font-style: italic;
+  font-size: .8rem;
+  color: var(--pink-strong);
+}

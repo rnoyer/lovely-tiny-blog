@@ -1,0 +1,20 @@
+<a href="/article/id/<%= post.id %>" class="post">
+  <h3><%= post.title %></h3>
+  <div class="post_content">
+    <% for( paragraph of post.content) { %>
+      <p><%= paragraph %></p>
+    <% } %>
+  </div>
+  <div class="bottom_post_container">
+    <p class="post_datestamp"><%= post.lastEdit ? `✍️ ${post.lastEdit}` : `✨ ${post.createDate}` %></p>
+
+    <form action="/editpost" method="POST">
+      <input type="submit" value="✍️" class="post_button" />
+      <input name="id" type="hidden" value="<%= post.id %>" />
+    </form>
+    <form action="/deletepost/id/<%= post.id %>" method="POST">
+      <input type="submit" value="🗑️" class="post_button" />
+    </form>
+  </div>
+
+</a>

@@ -1,0 +1,19 @@
+<%- include('./partials/header.ejs') %>
+<article class="article">
+  <div class="article_top">
+    <h1 class="custom_h1"><%= data.title %></h1>
+    <nav>
+      <button onclick="window.location='/'" class="post_button" >🏠</button>
+    </nav>
+  </div>
+  <div class="article_content">
+    <% for( paragraph of data.content) { %>
+      <p><%= paragraph %></p>
+    <% } %>
+    <p class="article_datestamp">Created on <%= data.createDate %></p>
+    <% if (data.lastEdit) { %>
+      <p class="article_datestamp">Last edit: <%= data.lastEdit %></p>
+    <% } %>
+  </div>
+</article>
+<%- include('./partials/footer.ejs') %>

@@ -1,0 +1,41 @@
+.primary-btn {
+  text-align: center;
+  padding: 0.5em;
+  border: 1px outset buttonborder;
+  color: buttontext;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  background: var(--pink-light);
+  border-radius: 8px;
+  height: fit-content;
+}
+
+.primary-btn:hover {
+  background: var(--pink-medium);
+}
+
+.primary-btn:active {
+  background: var(--pink-strong);
+  color: white;
+}
+
+.secondary-btn {
+  text-align: center;
+  padding: 0.2em;
+  border: 1px outset buttonborder;
+  color: buttontext;
+  text-decoration: none;
+  background: white;
+  border-radius: 8px;
+  height: fit-content;
+}
+
+.secondary-btn:hover {
+  background: var(--pink-light);
+}
+
+.secondary-btn:active {
+  background: var(--pink-medium);
+  color: white;
+}

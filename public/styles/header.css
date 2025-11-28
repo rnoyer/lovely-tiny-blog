@@ -1,0 +1,12 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+  padding: 0.2em 2em;
+  background-color: white;
+  border-bottom: 1px solid var(--pink-light);
+}
+
+.header-btn {
+  align-self: center;
+}

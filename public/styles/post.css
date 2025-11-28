@@ -1,0 +1,60 @@
+.post_grid {
+  flex: 1;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(10em, 20em));
+  grid-auto-rows: max-content;
+  justify-items: stretch;
+  align-items: start;
+  padding: 1em 2em;
+  gap: 1em;
+  overflow-y: auto;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  border-radius: 10px;
+  border: 1px solid var(--pink-strong);
+  background-color: white;
+}
+
+.post>h3 {
+  margin-top: unset;
+  margin-bottom: 16px;
+}
+
+.post_content {
+  max-height: 200px;
+  overflow: auto;
+}
+
+.post_content>p:first-child {
+  margin-top: unset;
+}
+
+.post_content>p {
+  color: rgb(77, 77, 77);
+}
+
+.bottom_post_container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1em;
+  margin-top: 1em;
+}
+
+.post_button {
+  padding: 0.5em 1em;
+  font-size: 1.1rem;
+}
+
+.post_datestamp {
+  font-style: italic;
+  font-size: .8rem;
+  color: var(--pink-strong);
+  margin: unset;
+  margin-right: auto;
+  align-self: flex-end;
+}

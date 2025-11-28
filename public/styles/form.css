@@ -1,0 +1,16 @@
+.form_container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.form_container>h1 {
+  margin: unset;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}

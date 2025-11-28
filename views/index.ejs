@@ -1,0 +1,7 @@
+<%- include('./partials/header.ejs') %>
+<div class="post_grid">
+  <% data.forEach(post => { %>
+    <%- include('./partials/post', {post: post}) %>
+  <% }) %>
+</div>
+<%- include('./partials/footer.ejs') %>

@@ -1,0 +1,26 @@
+:root {
+  --pink-bg: rgb(250, 222, 227);
+  --pink-light: pink;
+  --pink-medium: rgb(255, 137, 157);
+  --pink-strong: rgb(255, 46, 81);
+}
+
+.custom_h1 {
+  margin-top: unset;
+}
+
+h1,
+a {
+  color: var(--pink-strong);
+  text-decoration: none;
+  font-style: italic;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  margin: 0;
+  background-color: var(--pink-bg);
+}
