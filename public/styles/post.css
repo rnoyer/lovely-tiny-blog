@@ -18,6 +18,8 @@
   border-radius: 10px;
   border: 1px solid var(--pink-strong);
   background-color: white;
+  overflow: hidden;
+  max-height: 25em;
 }
 
 .post>h3 {
@@ -26,16 +28,12 @@
 }
 
 .post_content {
-  max-height: 200px;
+  height: 100%;
   overflow: auto;
 }
 
 .post_content>p:first-child {
   margin-top: unset;
-}
-
-.post_content>p {
-  color: rgb(77, 77, 77);
 }
 
 .bottom_post_container {

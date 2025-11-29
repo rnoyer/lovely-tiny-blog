@@ -3,7 +3,7 @@
   <h1>Add a mindful post</h1>
 
   <form action="submit" method="POST" class="form">
-    <input name="title" type="text" class="input" placeholder="Title" value="<%= locals.editedPostTitle && editedPostTitle %>" />
+    <input name="title" type="text" maxlength="125" class="input" placeholder="Title" value="<%= locals.editedPostTitle && editedPostTitle %>" />
     <textarea name="content" class="input" rows="20" cols="33" placeholder="Write here your post content"><%= locals.editedPostContent && editedPostContent %></textarea>
     <input name="id" type="hidden" value="<%= locals.editedPostId && editedPostId %>" />
     <input type="submit" value="Publish" class="primary-btn" />

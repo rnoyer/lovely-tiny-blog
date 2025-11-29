@@ -9,6 +9,12 @@
   margin-top: unset;
 }
 
+.custom_p {
+  color: rgb(77, 77, 77);
+  text-align: justify;
+  text-indent: 1em;
+}
+
 h1,
 a {
   color: var(--pink-strong);
