@@ -1,0 +1,23 @@
+.error404 {
+  /* flex: 1; */
+  /* justify-self: flex-start; */
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+   */
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2em;
+  margin-bottom: auto;
+  background-color: white;
+  padding: 2em;
+  border-radius: 1em;
+  border: 1px solid var(--pink-light);
+  box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.3);
+}
+
+.error404>img {
+  max-width: 20em;
+}
